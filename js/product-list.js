@@ -4,9 +4,12 @@ class ProductList {
     fetch(productsUrl)
       .then(result => result.json())
       .then(products => {
+        products.sort( (a, b) => a.price - b.price );
         this.products = products;
         this.renderProducts(renderContainer, products);
         this.addEventListeners();
+        document.querySelector('.filter').addEventListener('keydown',
+            () => this.renderProducts(renderContainer, products));
       });
   }
   getProductById(id) {
@@ -14,12 +17,15 @@ class ProductList {
   }
   renderProducts(container, products) {
     let productListDomString = '';
-    products.forEach(product => {
+    products
+        .filter( product => product.title.toLowerCase().includes(
+                document.querySelector('.filter').value.toLowerCase()))
+        .forEach(product => {
       productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product">
                     <img class="card-img-top" src="img/products/${
                       product.image
-                    }" 
+                    }"
                         alt="${product.title}">
                     <div class="card-body">
                       <h4 class="card-title">${product.title}</h4>

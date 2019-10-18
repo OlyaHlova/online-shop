@@ -54,5 +54,12 @@
         "image": "tesla-roadster.jpg",
         "description": "Best sports car in the World",
         "price": 249999.99
+    },
+    {
+        "id": "9",
+        "title": "Quadrocopter DJI Mavic Air Arctic",
+        "image": "dron silver.jpg",
+        "description": "Best quadrocopter in the World",
+        "price": 22909.99
     }
 ]

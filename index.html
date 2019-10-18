@@ -31,7 +31,7 @@
                 </ul>
                 <div>
                     <a class="nav-link" href="#cartModal" data-toggle="modal">
-                      <i class="fas fa-shopping-cart"></i>
+                      <i class="fas fa-cart-arrow-down"></i>
                         Cart<span id="cart-badge" class="badge badge-light"></span>
                     </a>
                 </div>
@@ -40,7 +40,7 @@
     </header>
     <main class="container">
         <div class="jumbotron">
-            
+
             <div id="carouselOffers" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -52,7 +52,7 @@
                     <p class="lead">
                       <a class="btn btn-primary btn-lg smooth" href="#products" role="button">Start shopping</a>
                     </p>
-                  </div>    
+                  </div>
                 </div>
                 <div class="carousel-item">
                   <img class="d-block w-100" src="img/products/tesla-x.jpg" alt="Tesla X">
@@ -60,7 +60,7 @@
                 <div class="carousel-item">
                   <img class="d-block w-100" src="img/products/tesla-roadster.jpg" alt="Blue drone">
                 </div>
-                <!-- Todo: Dynamically add items here --> 
+                <!-- Todo: Dynamically add items here -->
               </div>
               <a class="carousel-control-prev" href="#carouselOffers" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -76,17 +76,18 @@
         </div>
         <section>
             <h2 id="products">Products</h2>
+            <input type="text" class="filter">
             <div class="row products-container">
                <!--Products are dynamically generated here-->
             </div>
         </section>
     </main>
-    
+
     <footer class="container">
       <h2 id="contacts">Contact us</h2>
       <p>Copyright by <a href="https://programmingmentor.com">Programming Mentor</a></p>
     </footer>
-    
+
 
     <!-- Modal Product Info -->
     <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
@@ -110,7 +111,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Modal Cart -->
     <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -144,7 +145,7 @@
         </div>
       </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -154,7 +155,7 @@
     <script async src="js/smooth-scroll.js"></script>
     <script async src="js/alert-window.js"></script>
     <script defer src="js/cart.js"></script>
-    <script defer src="js/product-list.js"></script>    
+    <script defer src="js/product-list.js"></script>
     <script defer src="js/index.js"></script>
 </body>
 
